@@ -76,10 +76,10 @@
           }
           @keyframes wiggle2 {
             0% {
-              transform: scale(1);
+              transform: scale(0.9);
             }
             100% {
-              transform: scale(1.1);
+              transform: scale(1);
             }
           }
           body {
@@ -209,7 +209,7 @@
           
           .envelope-paper {
             height: 50px;
-            width: 85px;
+            width: 89px;
             background: #f1f0c3;
             transform: translateY(0);
             margin: 0 auto;
@@ -352,6 +352,17 @@
             font-size: 2em;
             font-family: "Caveat", cursive;
           }
+          .click{
+            font-size: 2em;
+            padding: 10px;
+            font-family: "Caveat", cursive;
+            text-align: center;
+            color: #f36363;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: wiggle2 0.3s infinite;
+          }
     </style>
     <body>
         <p class="not-yet endText"></p>
@@ -367,6 +378,9 @@
                     <p class="king txt">Có cái dây chun</p>
                 </div>
             </div>
+            <span class="click">Click Click Click!</span>
+        </div>
+
         <script>
             var endText = document.querySelector('.endText');
 var trapDoor = 0;
